@@ -1,0 +1,7 @@
+<?php
+    // File: THEMENAME.theme in your theme's root directory
+    function loopstudio_preprocess(&$variables, $hook)
+    {
+        $variables['base_path'] = base_path();
+    }
+?>

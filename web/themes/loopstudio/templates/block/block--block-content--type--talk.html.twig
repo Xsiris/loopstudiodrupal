@@ -1,0 +1,14 @@
+<div class="flex items-center justify-center md:justify-start">
+  {#<img class="md:hidden" src={interactive} alt="interactive" />#}
+  <div class="md:hidden">
+    {{ content.field_talking_point_image_mobile }}
+  </div>
+  {#<img class="min-[0px]:max-md:hidden" src={interactiveDesktop} alt="interactiveDesktop" />#}
+  <div class="min-[0px]:max-md:hidden">
+    {{ content.field_talking_point_image_deskto }}
+  </div>
+</div>
+<div class="px-6 py-12 text-center md:text-left md:px-12 md:absolute md:bottom-0 md:left-1/2 md:bg-white xl:w-1/4 xl:pr-0">
+  <h1 class="mb-6 font-JosefinSans text-3xl font-extralight leading-8 xl:text-4xl"> {{ content.field_header[0]['#context'].value }} </h1>
+  <p class="font-Alata text-sm text-loopDarkGrey leading-6 xl:text-md"> {{ content.field_body[0]['#context'].value }} </p>
+</div>

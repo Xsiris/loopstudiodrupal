@@ -1,0 +1,14 @@
+{%
+    set bgDivClasses = [
+        "absolute",
+        "w-full h-full",
+        "left-0",
+        "top-0",
+        "z-[-1]",
+        "md:bg-hero-bg-desktop", 
+        "md:bg-cover"
+    ]
+%}
+
+ <div {{ attributes.addClass(bgDivClasses) }} style={{ "background-image:url(" ~ file_url(base_path ~ directory ~ "/img/desktop/image-hero.jpg") ~ ");" }}><h1><h1/>{{ block_content.field_hero_image.entity.uri.value}}</div>
+

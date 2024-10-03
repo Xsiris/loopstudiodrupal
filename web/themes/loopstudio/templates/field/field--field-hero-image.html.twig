@@ -1,0 +1,15 @@
+{{ breakpoint() }}
+{%
+    set bgDivClasses = [
+        "absolute",
+        "w-full h-full",
+        "left-0",
+        "top-0",
+        "z-[-1]",
+        "md:bg-hero-bg-desktop", 
+        "bg-cover"
+    ]
+%}
+{% for item in items %}
+    <div {{ attributes.addClass(bgDivClasses) }} style={{ "background-image:url(" ~ file_url(base_path ~ directory ~ "/img/desktop/image-hero.jpg") ~ ");" }}></div>
+{% endfor %}

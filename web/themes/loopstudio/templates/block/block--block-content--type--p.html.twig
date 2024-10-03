@@ -1,0 +1,15 @@
+<div class="p-6 pb-0 xl:flex xl:w-1/4 xl:items-center xl:justify-center xl:pt-12">
+      <a class="hover:opacity-50" href="#">
+        <div class="relative">
+        {#<img class="md:hidden" src={earth} alt="earth" />#}
+          <div class="md:hidden">
+            {{ content.field_project_image_mobile }}
+          </div>
+          {#<img class="min-[0px]:max-md:hidden" src={earthDesktop} alt="earth" />#}
+          <div class="min-[0px]:max-md:hidden">
+            {{ content.field_project_image_desktop }}
+          </div>
+          <h2 class="absolute bottom-4 left-4 text-2xl font-JosefinSans font-extralight text-white xl:text-4xl">{{ content.field_project_title_formatted }}</h2>
+        </div>
+      </a>
+</div>

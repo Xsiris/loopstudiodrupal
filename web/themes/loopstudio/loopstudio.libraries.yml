@@ -1,0 +1,11 @@
+cdnfonts:
+  version: VERSION
+  css:
+    component:
+      css/fonts.css: {  }
+     
+tailwind:
+  version: VERSION
+  css:
+    component:
+      css/output.css: {  }

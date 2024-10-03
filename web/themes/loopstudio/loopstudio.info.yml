@@ -1,0 +1,14 @@
+name: Loop Studio
+type: theme
+description: "Loop studio theme"
+core_version_requirement: ^11
+base theme: stable9
+libraries:
+  - loopstudio/tailwind
+  - loopstudio/cdnfonts
+regions:
+  header: Header
+  primary_menu: Menu
+  content: Content
+  projects: Projects
+  footer: Footer
